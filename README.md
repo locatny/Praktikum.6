@@ -1,6 +1,6 @@
-# Praktikum.6
+# Praktikum 6
 
-## ER-D Praktikum.6
+## ER-D Praktikum 6
 ![](Foto/erd.png)
 
 ## Input Data Studi Kasus Karyawan
@@ -125,7 +125,7 @@ GROUP BY Project.id_proj;
 
 **Output :**
 
-![](Foto/1(1).png)
+![](Foto/1.png)
 
 ### 2. Jumlah Karyawan tiap Departemen yang bekerja pada tiap-tiap project
 **Script :**
@@ -141,7 +141,7 @@ GROUP BY Project.id_proj, Departemen.id_dept;
 
 **Output :**
 
-![](Foto/2(1).png)
+![](Foto/2.png)
 
 ### 3. Ada berapa Project yang sedang dikerjakan oleh Departemen *RnD*? *(ket: project berjalan adalah yang statusnya 1)*
 **Script :**
@@ -157,7 +157,7 @@ WHERE Departemen.nama = 'RnD' AND Project.status = 1;
 
 **Output :**
 
-![](Foto/3(1).png)
+![](Foto/3.png)
 
 ### 4. Berapa banyak Project yang sedang dikerjakan oleh Ari?
 **Script :**
@@ -171,7 +171,7 @@ WHERE Karyawan.nama = 'Ari' AND Project_detail.id_proj IN (SELECT id_proj FROM P
 
 **Output :**
 
-![](Foto/4(1).png)
+![](Foto/4.png)
 
 ### 5. Siapa saja yang mengerjakan Project B?
 **Script :**
@@ -185,4 +185,5 @@ WHERE Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE nama = 'B');
 
 **Output :**
 
-![](Foto/5(1).png)
+![](Foto/5.png)
+
