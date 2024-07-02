@@ -1,10 +1,10 @@
 # Praktikum 6
 
 ## ER-D Praktikum 6
-![](Foto/erd.png)
+![](erd.png)
 
 ## Input Data Studi Kasus Karyawan
-![](Foto/inputdata.png)
+![](inputdata.png)
 
 ### *Tabel Perusahan*
 ```sql
@@ -20,7 +20,7 @@ INSERT INTO Perusahaan (id_p, nama, alamat) VALUES
 ```
 
 ### *Output Tabel Perusahaan :*
-![](Foto/perusahaan.png)
+![](perusahaan.png)
 
 ### *Tabel Departemen*
 ```sql
@@ -39,7 +39,7 @@ INSERT INTO Departemen (id_dept, nama, id_p, manajer_nik) VALUES
 ('D04', 'Logistik', 'P02', NULL);
 ```
 ### *Output Tabel Departemen :*
-![](Foto/departemen.png)
+![](departemen.png)
 
 ### *Tabel Karyawan*
 ```sql
@@ -62,7 +62,7 @@ INSERT INTO Karyawan (nik, nama, id_dept, sup_nik) VALUES
 ('N08', 'Dika', 'D02', 'N06');
 ```
 ### *Output Tabel Karyawan :*
-![](Foto/karyawan.png)
+![](karyawan.png)
 
 ### *Tabel Project*
 ```sql
@@ -81,7 +81,7 @@ INSERT INTO Project (id_proj, nama, tgl_mulai, tgl_selesai, status) VALUES
 ```
 
 ### *Output Tabel Project :*
-![](Foto/project.png)
+![](project.png)
 
 ### *Tabel Project Detail*
 ```sql
@@ -107,7 +107,7 @@ INSERT INTO Project_detail (id_proj, nik) VALUES
 ```
 
 ### *Output Project Detail :*
-![](Foto/projectdetail.png)
+![](projectdetail.png)
 
 ## Latihan Praktikum 6
 
@@ -125,7 +125,7 @@ GROUP BY Project.id_proj;
 
 **Output :**
 
-![](Foto/1.png)
+![](z1.png)
 
 ### 2. Jumlah Karyawan tiap Departemen yang bekerja pada tiap-tiap project
 **Script :**
@@ -141,7 +141,7 @@ GROUP BY Project.id_proj, Departemen.id_dept;
 
 **Output :**
 
-![](Foto/2.png)
+![](z2.png)
 
 ### 3. Ada berapa Project yang sedang dikerjakan oleh Departemen *RnD*? *(ket: project berjalan adalah yang statusnya 1)*
 **Script :**
@@ -157,7 +157,7 @@ WHERE Departemen.nama = 'RnD' AND Project.status = 1;
 
 **Output :**
 
-![](Foto/3.png)
+![](z3.png)
 
 ### 4. Berapa banyak Project yang sedang dikerjakan oleh Ari?
 **Script :**
@@ -171,7 +171,7 @@ WHERE Karyawan.nama = 'Ari' AND Project_detail.id_proj IN (SELECT id_proj FROM P
 
 **Output :**
 
-![](Foto/4.png)
+![](z4.png)
 
 ### 5. Siapa saja yang mengerjakan Project B?
 **Script :**
@@ -185,5 +185,5 @@ WHERE Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE nama = 'B');
 
 **Output :**
 
-![](Foto/5.png)
+![](z5.png)
 
